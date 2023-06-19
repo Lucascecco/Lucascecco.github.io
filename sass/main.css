@@ -287,4 +287,31 @@ iframe {
   .carta:nth-child(3) {
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/beto.jpg);
   }
+}
+@keyframes mi-efecto {
+  0% {
+    width: 800px;
+    background-color: greenyellow;
+    height: 100px;
+  }
+  50% {
+    background-color: tomato;
+    width: 400px;
+    border: 5px solid blue;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 70px;
+  }
+  100% {
+    width: 600px;
+    background-color: orange;
+  }
+}
+.box-animado {
+  background: aqua;
+  /* animation-name: mi-efecto;
+  animation-delay: 0;
+  animation-duration: 3s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear; */
+  animation: mi-efecto 3s linear 0s 0 normal none;
 }/*# sourceMappingURL=main.css.map */
