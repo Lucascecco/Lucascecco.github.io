@@ -4,63 +4,109 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mundo River</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./sass/main.css">
     <link rel="shortcut icon" href="img/escudo2.png" type="image/x-icon">
 </head>
 
 <body>
     <header>
-        <div class="container">
-            <img src="/img/MR2.png" style="height:70px; width:auto;" />
-            <nav>
-                <a href="titulos.html" target="_blank">Titulos</a>
-                <a href="jugadores.html" target="_blank">Jugadores</a>
-                <a href="tecnicos.html" target="_blank">Tecnicos</a>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/img/MR2.png" alt="Mundo River" width="300" height="auto">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="titulos.html">Títulos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="jugadores.html">Jugadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tecnicos.html">Técnicos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
 
     <section id="hero">
-        <img src="/img/MR.png"/>
-        <a href="historia.html" target="_blank">Historia</a>
+        <div class="img-container p-5 text-center bg-image">
+            <img class="d-block mx-auto my-5" src="/img/MR.png" alt="Mundo River" width="600" height="auto">
+            <a href="historia.html" class="btn btn-light px-3 py-2 m-5">Historia</a>
+        </div>
     </section>
 
     <section id="hero2">
-        <div class="container">
-            <div class="img-container"></div>
-            <div class="texto">
-                <h2>Somos <span class="colorAcento">Mundo River</span></h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam natus sit magni odit vero dicta
-                    vel itaque quod blanditiis. Quis cumque harum esse consequuntur earum neque suscipit quibusdam iusto
-                    eaque?</p>
+        <div class="px-4 py-5 text-center">
+            <h1 class="display-4 fw-bold">Somos <span style="color:#ED1229">Mundo River</span></h1>
+            <div class="col-lg-6 mx-auto">
+                <p class="lead mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam natus sit magni
+                    odit
+                    vero dicta vel itaque quod blanditiis. Quis cumque harum esse consequuntur earum neque suscipit
+                    quibusdam iusto eaque?</p>
+            </div>
+            <div class="overflow-hidden" style="max-height: 50vh;">
+                <div class="container px-5">
+                    <img src="/img/escudos.jpg" class="img-fluid rounded-3" alt="Escudos River"
+                        width="700" height="500" loading="lazy">
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="jugadores-importantes">
-        <div class="container">
-            <h2>Jugadores <span class="colorAcento">Importantes</span></h2>
-            <div class="jugadores">
-
-                <div class="carta">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis optio, iure minus incidunt neque
-                        necessitatibus aliquam eligendi. Blanditiis numquam doloribus quia perspiciatis laboriosam
-                        consequuntur fugit, eos ipsum voluptate minus nam!</p>
-                    <button>Angel Labruna</button>
+    <section id="jugadores-importantes" class="text-center bg-dark">
+        <h1 class="px-5 py-5 text-bg-dark">Jugadores <span style="color:#ED1229">Importantes</span></h1>
+        <div class="row px-5 pb-5">
+            <div class="col-md-4 p-1">
+                <div class="card text-center">
+                    <img src="/img/labruna2.jpg" class="card-img-top" alt="Ángel Labruna">
+                    <div class="card-body">
+                        <h5 class="card-title">Ángel Labruna</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam natus
+                            sit
+                            magni oditvero dictavel itaque quod blanditiis.</p>
+                        <a href="angel_labruna.html" class="btn btn-dark">Ver Historia</a>
+                    </div>
                 </div>
-                <div class="carta">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis optio, iure minus incidunt neque
-                        necessitatibus aliquam eligendi. Blanditiis numquam doloribus quia perspiciatis laboriosam
-                        consequuntur fugit, eos ipsum voluptate minus nam!</p>
-                    <button>Enzo Francescoli</button>
+            </div>
+            <div class="col-md-4 p-1">
+                <div class="card text-center">
+                    <img src="/img/enzo.webp" class="card-img-top" alt="Enzo Francescoli">
+                    <div class="card-body">
+                        <h5 class="card-title">Enzo Francescoli</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam natus
+                            sit
+                            magni oditvero dictavel itaque quod blanditiis.</p>
+                        <a href="enzo_francescoli.html" class="btn btn-dark">Ver Historia</a>
+                    </div>
                 </div>
-                <div class="carta">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis optio, iure minus incidunt neque
-                        necessitatibus aliquam eligendi. Blanditiis numquam doloribus quia perspiciatis laboriosam
-                        consequuntur fugit, eos ipsum voluptate minus nam!</p>
-                    <button>Norberto Alonso</button>
+            </div>
+            <div class="col-md-4 p-1">
+                <div class="card text-center"><img src="/img/beto.jpg" class="card-img-top" alt="Norberto Alonso">
+                    <div class="card-body">
+                        <h5 class="card-title">Norberto Alonso</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam natus
+                            sit
+                            magni oditvero dictavel itaque quod blanditiis.</p>
+                        <a href="norberto_alonso.html" class="btn btn-dark">Ver Historia</a>
+                    </div>
                 </div>
             </div>
         </div>
