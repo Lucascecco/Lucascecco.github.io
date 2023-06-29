@@ -15,24 +15,19 @@ a:hover {
   color: #ED1229;
 }
 
-.navbar {
-  height: 10vh;
-}
-
-#hero .img-container {
-  height: 90vh;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/monumental.webp");
+.custom-background {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
 
-#hero2 .img {
-  animation-name: aparecer;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in;
-  animation-duration: 2s;
-  animation-delay: 5s;
+#jugadores .custom-background {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/equipo.jpg");
+}
+
+#hero .custom-background {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/monumental.webp");
+  height: 90vh;
 }
 
 footer p {
@@ -46,9 +41,4 @@ footer .contain {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-}
-
-@keyframes aparecer {
-  0% {opacity: 0;}
-  0% {opacity: 100;}
 }

@@ -1,40 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jugadores</title>
-    <link rel="shortcut icon" href="img/escudo2.png" type="image/x-icon">
-    <link rel="stylesheet" href="./sass/style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="shortcut icon" href="img/escudo.svg" type="image/x-icon">
 </head>
+
 <body>
-
-    <section>
-
-        <h1 class="logo"><img src="img/escudo2.png" alt="Logo"></h1>
-        <h2>Los jugadores mas importantes de River</h2>
-
-        <div class="Jugadores">
-                <h3>Fernando Cavenaghi</h3>
-                <a href="https://www.youtube.com/watch?v=W-iycVwEDZk" target="_blank">
-                <img class="toro" src="img/cavenaghi.jpg" alt="toro">
+    <script>
+        AOS.init();
+    </script>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/img/MR2.png" alt="Mundo River" width="100" height="auto"
+                        class="d-inline-block align-text-center">
                 </a>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam laboriosam cupiditate voluptatibus, facere, in totam illo ab reprehenderit eius ratione quisquam temporibus quasi saepe sint, commodi possimus numquam esse magni!</p>
-                <h3>David Trezeguet</h3>
-                <a href="https://www.youtube.com/watch?v=ZOlnUGjT6gI" target="_blank">
-                <img class="trece" src="img/trezeguet.jpg" alt="trece">
-                </a>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam laboriosam cupiditate voluptatibus, facere, in totam illo ab reprehenderit eius ratione quisquam temporibus quasi saepe sint, commodi possimus numquam esse magni!</p>
-                <h3>Alejandro Dominguez</h3>
-                <a href="https://www.youtube.com/watch?v=bhEEhoMVRMk" target="_blank">
-                <img class="chori" src="img/dominguez.jpg" alt="chori">
-                </a>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam laboriosam cupiditate voluptatibus, facere, in totam illo ab reprehenderit eius ratione quisquam temporibus quasi saepe sint, commodi possimus numquam esse magni!</p>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav fs-5">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="titulos.html">Títulos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Jugadores</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tecnicos.html">Técnicos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="jugadores">
+        <div class="container-fluid text-center custom-background">
+            <h1 class="display-4 fw-bold p-5" style="color:white">Los jugadores más importantes de <span
+                    style="color:#ED1229">River</span></h1>
+
+            <div class="container text-center pb-5">
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <a class="nav-link" href="https://www.youtube.com/watch?v=W-iycVwEDZk" target="_blank">
+                                <img src="img/cavenaghi.jpg" class="card-img-top" alt="Fernando Cavenaghi">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Fernando Cavenaghi</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
+                                    laboriosam cupiditate voluptatibus, facere, in totam illo ab reprehenderit eius
+                                    ratione
+                                    quisquam temporibus quasi saepe sint, commodi possimus numquam esse magni!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <a class="nav-link" href="https://www.youtube.com/watch?v=ZOlnUGjT6gI" target="_blank">
+                                <img src="img/trezeguet.jpg" class="card-img-top" alt="David Trezeguet">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">David Trezeguet</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
+                                    laboriosam cupiditate voluptatibus, facere, in totam illo ab reprehenderit eius
+                                    ratione
+                                    quisquam temporibus quasi saepe sint, commodi possimus numquam esse magni!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <a class="nav-link" href="https://www.youtube.com/watch?v=bhEEhoMVRMk" target="_blank">
+                                <img src="img/dominguez.jpg" class="card-img-top" alt="Alejandro Dominguez">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Alejandro Dominguez</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
+                                    laboriosam cupiditate voluptatibus, facere, in totam illo ab reprehenderit eius
+                                    ratione
+                                    quisquam temporibus quasi saepe sint, commodi possimus numquam esse magni!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <a class="nav-link" href="https://www.youtube.com/watch?v=07ZQi3D7XvU" target="_blank">
+                                <img src="img/ocampos.jpg" class="card-img-top" alt="Lucas Ocampos">
+                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">Lucas Ocampos</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam
+                                    laboriosam cupiditate voluptatibus, facere, in totam illo ab reprehenderit eius
+                                    ratione
+                                    quisquam temporibus quasi saepe sint, commodi possimus numquam esse magni!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-
     </section>
 
+    <footer>
+        <div class="contain">
+            <p>&copy; Mundo River 2023</p>
+        </div>
+    </footer>
 </body>
+
 </html>
