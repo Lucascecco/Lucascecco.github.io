@@ -11,25 +11,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="./sass/main.css">
     <link rel="shortcut icon" href="img/escudo2.png" type="image/x-icon">
 </head>
 
 <body>
+    <script>
+        AOS.init();
+    </script>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="/img/MR2.png" alt="Mundo River" width="100" height="auto"
                         class="d-inline-block align-text-center">
-                    Mundo River
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav fs-5">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Principal</a>
                         </li>
@@ -49,18 +53,18 @@
     </header>
 
     <section id="hero">
-        <div class="img-container p-5 text-center bg-image">
+        <div class="d-flex flex-column align-items-center justify-content-center img-container p-5 text-center bg-image">
             <div>
-                <div class="container px-5">
-                    <img src="/img/MR.png" class="img-fluid" alt="Mundo River" width="600">
+                <div class="container px-5 my-5" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <img src="/img/MR.png" class="img-fluid" alt="Mundo River" width="500">
                 </div>
             </div>
-            <a href="historia.html" class="btn btn-light px-3 py-2">Historia</a>
+            <a href="historia.html" class="btn btn-light px-3 py-2 m-5 fs-4" data-aos="zoom-in-down" data-aos-duration="1000">Historia</a>
         </div>
     </section>
 
     <section id="hero2">
-        <div class="px-4 py-5 text-center">
+        <div class="px-4 py-5 text-center" data-aos="zoom-in-up" data-aos-duration="1000">
             <h1 class="display-4 fw-bold">Somos <span style="color:#ED1229">Mundo River</span></h1>
             <div class="col-lg-6 mx-auto">
                 <p class="lead mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam natus sit magni
@@ -69,8 +73,8 @@
                     quibusdam iusto eaque?</p>
             </div>
             <div class="overflow-hidden" style="max-height: 50vh;">
-                <div class="container px-5">
-                    <img src="/img/escudos.jpg" class="img-fluid rounded-3" alt="Escudos River" width="700" height="500"
+                <div class="container px-5" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <img src="/img/copas.jpg" class="img-fluid rounded-3" alt="Copas River" width="700" height="500"
                         loading="lazy">
                 </div>
             </div>
@@ -78,10 +82,10 @@
     </section>
 
     <section id="jugadores-importantes" class="text-center bg-dark">
-        <h1 class="px-5 py-5 text-bg-dark">Jugadores <span style="color:#ED1229">Importantes</span></h1>
+        <h1 class="px-5 py-5 text-bg-dark" data-aos="zoom-in-up" data-aos-duration="1000">Jugadores <span style="color:#ED1229">Importantes</span></h1>
         <div class="container-fluid text-center pb-5">
             <div class="row">
-                <div class="col-md pb-2">
+                <div class="col-md pb-2" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="card">
                         <img src="/img/labruna2.jpg" class="card-img-top" alt="Ángel Labruna">
                         <div class="card-body">
@@ -94,7 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md pb-2">
+                <div class="col-md pb-2" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="card">
                         <img src="/img/enzo.webp" class="card-img-top" alt="Enzo Francescoli">
                         <div class="card-body">
@@ -107,7 +111,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md pb-2">
+                <div class="col-md pb-2" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="card"><img src="/img/beto.jpg" class="card-img-top" alt="Norberto Alonso">
                         <div class="card-body">
                             <h5 class="card-title">Norberto Alonso</h5>
